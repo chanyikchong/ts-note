@@ -90,6 +90,8 @@ plugins:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+      block_tag: 'div'
+      inline_tag: 'span'
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

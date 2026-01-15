@@ -1,0 +1,29 @@
+{
+  "id": "patch_20260115_104818",
+  "query": "I don't understand Kalman filter",
+  "type": "content_clarification",
+  "status": "proposed",
+  "created_at": "2026-01-15T10:48:18.930156",
+  "affected_files": [
+    "docs/en/state-space/kalman-filter.md",
+    "docs/en/state-space/kalman-filter.md",
+    "docs/en/interview/interview-questions.md"
+  ],
+  "description": "Clarification needed based on user query: I don't understand Kalman filter",
+  "proposed_changes": [
+    {
+      "file": "docs/en/state-space/kalman-filter.md",
+      "section": "Run Kalman filter",
+      "change_type": "clarification",
+      "rationale": "User asked: I don't understand Kalman filter. Current content may need additional explanation.",
+      "suggested_addition": "\n<!--\nSuggested clarification for: I don't understand Kalman filter\n\nConsider adding:\n1. More explicit definition\n2. Additional example\n3. Common misconception note\n-->\n"
+    },
+    {
+      "file": "docs/en/state-space/kalman-filter.md",
+      "section": "Quiz",
+      "change_type": "quiz_addition",
+      "rationale": "User confusion detected. Suggest adding quiz question about: I don't understand Kalman filter",
+      "suggested_addition": "\n<details class=\"quiz\">\n<summary><strong>Q (New):</strong> I don't understand Kalman filter</summary>\n\n<div class=\"answer\">\n<strong>Answer:</strong> [Add clear answer here]\n\n<strong>Explanation:</strong> [Add detailed explanation]\n\n**Key equation:** [Add relevant equation if applicable]\n\n<div class=\"pitfall\">\n<strong>Common pitfall:</strong> [Add common misconception]\n</div>\n</div>\n</details>\n"
+    }
+  ]
+}

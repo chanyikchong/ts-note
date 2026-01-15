@@ -1,0 +1,81 @@
+/* Quiz styling */
+details.quiz {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 4px solid #5c6bc0;
+    background-color: #f5f5f5;
+}
+
+[data-md-color-scheme="slate"] details.quiz {
+    background-color: #2d2d2d;
+}
+
+details.quiz summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #3f51b5;
+    padding: 0.5em 0;
+}
+
+[data-md-color-scheme="slate"] details.quiz summary {
+    color: #7986cb;
+}
+
+details.quiz[open] summary {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5em;
+}
+
+details.quiz .answer {
+    padding: 0.5em 0;
+}
+
+details.quiz .answer strong {
+    color: #4caf50;
+}
+
+details.quiz .pitfall {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: #fff3e0;
+    border-left: 3px solid #ff9800;
+}
+
+[data-md-color-scheme="slate"] details.quiz .pitfall {
+    background-color: #3d3020;
+}
+
+/* Interview summary box */
+.interview-summary {
+    padding: 1em;
+    margin: 1em 0;
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] .interview-summary {
+    background-color: #1a2a3a;
+}
+
+/* Section headers */
+h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.3em;
+}
+
+/* Code blocks in math context */
+.arithmatex {
+    overflow-x: auto;
+}
+
+/* Better table styling */
+table {
+    display: table;
+    width: 100%;
+}
+
+/* Language toggle visibility */
+.md-header__topic {
+    font-weight: 600;
+}

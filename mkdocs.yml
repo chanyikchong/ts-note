@@ -1,0 +1,164 @@
+site_name: Time Series Study Notes
+site_description: Bilingual interview-ready time series analysis notes with math, code, and quizzes
+site_author: Time Series Study Notes Contributors
+site_url: https://chanyikchong.github.io/time-series-notes/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          nav_translations:
+            Home: 首页
+            Foundations: 基础概念
+            Stationarity: 平稳性
+            Autocorrelation: 自相关
+            Time Domain Models: 时域模型
+            AR Models: AR模型
+            MA Models: MA模型
+            ARMA Models: ARMA模型
+            ARIMA Models: ARIMA模型
+            SARIMA Models: SARIMA模型
+            Model Identification: 模型识别
+            Exponential Smoothing: 指数平滑
+            Simple Exponential Smoothing: 简单指数平滑
+            Holt Method: Holt方法
+            Holt-Winters: Holt-Winters方法
+            ETS Framework: ETS框架
+            Decomposition: 分解方法
+            STL Decomposition: STL分解
+            Classical Decomposition: 经典分解
+            Forecasting: 预测
+            Prediction Intervals: 预测区间
+            Multi-step Forecasting: 多步预测
+            Model Selection: 模型选择
+            Information Criteria: 信息准则
+            Cross-validation: 交叉验证
+            Residual Diagnostics: 残差诊断
+            Spectral Analysis: 谱分析
+            State Space Models: 状态空间模型
+            Kalman Filter: 卡尔曼滤波
+            Multivariate TS: 多元时间序列
+            VAR Models: VAR模型
+            Granger Causality: 格兰杰因果
+            Change Detection: 变点检测
+            Anomaly Detection: 异常检测
+            Feature Engineering: 特征工程
+            Deep Learning: 深度学习
+            Practical Modeling: 实践建模
+            Interview Questions: 面试问题
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+
+nav:
+  - Home: index.md
+  - Foundations:
+    - Stationarity: foundations/stationarity.md
+    - Autocorrelation: foundations/autocorrelation.md
+  - Time Domain Models:
+    - AR Models: time-domain/ar.md
+    - MA Models: time-domain/ma.md
+    - ARMA Models: time-domain/arma.md
+    - ARIMA Models: time-domain/arima.md
+    - SARIMA Models: time-domain/sarima.md
+    - Model Identification: time-domain/identification.md
+  - Exponential Smoothing:
+    - Simple Exponential Smoothing: exponential-smoothing/ses.md
+    - Holt Method: exponential-smoothing/holt.md
+    - Holt-Winters: exponential-smoothing/holt-winters.md
+    - ETS Framework: exponential-smoothing/ets.md
+  - Decomposition:
+    - STL Decomposition: decomposition/stl.md
+    - Classical Decomposition: decomposition/classical.md
+  - Forecasting:
+    - Prediction Intervals: forecasting/prediction-intervals.md
+    - Multi-step Forecasting: forecasting/multi-step.md
+  - Model Selection:
+    - Information Criteria: model-selection/information-criteria.md
+    - Cross-validation: model-selection/cross-validation.md
+    - Residual Diagnostics: model-selection/residual-diagnostics.md
+  - Spectral Analysis: spectral/spectral-analysis.md
+  - State Space Models:
+    - Kalman Filter: state-space/kalman-filter.md
+  - Multivariate TS:
+    - VAR Models: multivariate/var.md
+    - Granger Causality: multivariate/granger-causality.md
+  - Change Detection: change-detection/change-point.md
+  - Anomaly Detection: anomaly-detection/anomaly-detection.md
+  - Feature Engineering: features/feature-engineering.md
+  - Deep Learning: deep-learning/deep-learning-ts.md
+  - Practical Modeling: practical/practical-modeling.md
+  - Interview Questions: interview/interview-questions.md
